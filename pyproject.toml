@@ -1,0 +1,18 @@
+[project]
+name = "tb-rl"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "gymnasium>=1.4.0",
+    "pyyaml>=6.0.3",
+    "terminal-bench==0.2.18",
+]
+
+[project.scripts]
+tb-rl = "tb_rl:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
